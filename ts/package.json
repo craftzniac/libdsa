@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "dev": "pnpm tsc && node ./dist/binarySearch.js"
+    }, 
+	"devDependencies": {
+		"typescript": "^5.9.3"
+	}
+}
