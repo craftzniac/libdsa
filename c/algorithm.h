@@ -8,3 +8,5 @@ typedef struct _BS_IntPair {
 BS_IntPair binary_search(int *array, int array_length, int item);
 
 void print_BS_IntPair(BS_IntPair *res);
+
+void test_binary_search();

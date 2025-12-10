@@ -1,4 +1,4 @@
-#include "algo.h"
+#include "algorithm.h"
 #include <stddef.h>
 #include <stdio.h>
 
@@ -39,4 +39,13 @@ void print_BS_IntPair(BS_IntPair *res) {
   }
 
   printf("BS_IntPair { iter: %d, pos: %d }\n", res->iter, res->pos);
+}
+
+
+void test_binary_search() {
+  int list[] = {1, 2, 8, 10, 11, 12, 13};
+  int item = 9;
+  int length = sizeof(list) / sizeof(int);
+  BS_IntPair result = binary_search(list, length, item);
+  print_BS_IntPair(&result);
 }
